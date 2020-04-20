@@ -25,7 +25,7 @@ public class JavaMailApp
                         new javax.mail.Authenticator() {
                              protected PasswordAuthentication getPasswordAuthentication()
                              {
-                                   return new PasswordAuthentication("luizroberto@hotmail.com", "23r45j67a");
+                                   return new PasswordAuthentication("email@hotmail.com", "senha");
                              }
                         });
  
@@ -35,10 +35,10 @@ public class JavaMailApp
             try {
  
                   Message message = new MimeMessage(session);
-                  message.setFrom(new InternetAddress("luizroberto@hotmail.com")); //Remetente
+                  message.setFrom(new InternetAddress("email@hotmail.com")); //Remetente
  
                   message.setRecipients(Message.RecipientType.TO,
-                                    InternetAddress.parse("luizroberto1957@hotmail.com")); //Destinatário(s)
+                                    InternetAddress.parse("email@hotmail.com")); //Destinatário(s)
                   message.setSubject("Enviando email com JavaMail");//Assunto
                   message.setText("Enviei este email utilizando JavaMail com minha conta Hotmail!");
                   /**Método para enviar a mensagem criada*/

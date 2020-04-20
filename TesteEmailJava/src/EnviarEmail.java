@@ -8,8 +8,8 @@ public class EnviarEmail {
 		//commons-email-1.5.jar
 		//mail-1.4.7.jar
 		
-		String meuEmail = "robertolrv1957@gmail.com";
-		String minhaSenha = "23R45j67a";
+		String meuEmail = "email";
+		String minhaSenha = "senha";
 		
 		SimpleEmail email = new SimpleEmail();
 		email.setHostName("smtp.gmail.com");

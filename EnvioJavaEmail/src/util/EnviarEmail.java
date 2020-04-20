@@ -56,14 +56,14 @@ public class EnviarEmail {
                 new javax.mail.Authenticator() {
                     protected PasswordAuthentication getPasswordAuthentication() {
 
-                        return new PasswordAuthentication("luizroberto943@gmail.com", "23r45j67A");//email e senha usuario 
+                        return new PasswordAuthentication("email@gmail.com", "senha");//email e senha usuario 
                     }
                 });
 
         //compose message  
         try {
             MimeMessage message = new MimeMessage(s);
-            message.setFrom(new InternetAddress("luizroberto943@gmail.com"));
+            message.setFrom(new InternetAddress("email@gmail.com"));
             message.addRecipient(Message.RecipientType.TO, new InternetAddress(this.emailDestinatario));
 
             message.setSubject(this.assunto);
@@ -98,7 +98,7 @@ public class EnviarEmail {
                         new javax.mail.Authenticator() {
                              protected PasswordAuthentication getPasswordAuthentication() 
                              {
-                                   return new PasswordAuthentication("luizroberto1957@hotmail.com", "23r45j67a");
+                                   return new PasswordAuthentication("email@hotmail.com", "senha");
                              }
                         });
             /** Ativa Debug para sessão */
@@ -106,10 +106,10 @@ public class EnviarEmail {
             try {
 
                   Message message = new MimeMessage(session);
-                  message.setFrom(new InternetAddress("luizroberto1957@hotmail.com")); //Remetente
+                  message.setFrom(new InternetAddress("email@hotmail.com")); //Remetente
 
                   message.setRecipients(Message.RecipientType.TO, 
-                                    InternetAddress.parse("luizroberto1957@gmail.com")); //Destinatario(s)
+                                    InternetAddress.parse("email@gmail.com")); //Destinatario(s)
                   message.setSubject("Enviando email com JavaMail");//Assunto
                   message.setText("Enviei este email utilizando JavaMail com minha conta Hotmail!");
                   /**Metodo para enviar a mensagem criada*/

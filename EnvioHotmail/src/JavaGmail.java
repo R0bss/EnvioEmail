@@ -22,7 +22,7 @@ public class JavaGmail
                         new javax.mail.Authenticator() {
                              protected PasswordAuthentication getPasswordAuthentication()
                              {
-                                   return new PasswordAuthentication("luizroberto943@gmail.com", "");
+                                   return new PasswordAuthentication("email", "senha");
                              }
                         });
  
@@ -32,10 +32,10 @@ public class JavaGmail
             try {
  
                   Message message = new MimeMessage(session);
-                  message.setFrom(new InternetAddress("luizroberto943@gmail.com")); //Remetente
+                  message.setFrom(new InternetAddress("email")); //Remetente
  
                   message.setRecipients(Message.RecipientType.TO,
-                                    InternetAddress.parse("luizroberto943@gmail.com")); //Destinatário(s)
+                                    InternetAddress.parse("email")); //Destinatário(s)
                   message.setSubject("Enviando email com JavaMail");//Assunto
                   message.setText("Enviei este email utilizando JavaMail com minha conta Gmail!");
                   /*Método para enviar a mensagem criada*/

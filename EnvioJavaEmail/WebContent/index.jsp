@@ -4,7 +4,7 @@
 
 	if (request.getMethod().equals("POST")) {
 		EnviarEmail enviar = new EnviarEmail();
-		enviar.setEmailDestinatario("luizroberto1957@hotmail.com");
+		enviar.setEmailDestinatario("email@hotmail.com");
 		enviar.setAssunto("Teste");
 		//uso StringBuffer para otimizar a concatenação 
 		//de string
