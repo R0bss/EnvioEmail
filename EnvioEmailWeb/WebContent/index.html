@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Formulario Envio Email - JavaMail</title>
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+	<!-- Barra superior com os menus de navegacao -->
+
+	<!-- Container Principal -->
+	<div id="main" class="container">
+		<h3 class="page-header">Formulario Envio Email - JavaMail</h3>
+		<!-- Formulario para inclusao de clientes -->
+		<form action="EnviarEmail" method="post">
+			<!-- area de campos do form -->
+			<div class="row">
+				<div class="form-group col-md-12">
+					<label for="nome">Meu email</label> <input type="text"
+						class="form-control" name="myEmail" id="myEmail" required
+						maxlength="100"
+						placeholder="digite WeatherNotificacao@hotmail.com" value="WeatherNotificacao@hotmail.com">
+				</div>
+			</div>
+			<div class="row">
+				<div class="form-group col-md-6">
+					<label for="email">E-Mail destinatario</label> <input type="text"
+						class="form-control" name="youEmail" id="youEmail" required
+						maxlength="100" placeholder="Email do destinatario">
+				</div>
+			</div>
+			<div class="row">
+			<div class="form-group col-md-6">
+				<label for="senha">Titulo</label> <input type="text"
+					class="form-control" name="titulo" id="titulo" required
+					maxlength="100" placeholder="Assunto do email">
+			</div>
+			<div class="form-group col-md-6">
+					<label for="cidade">Mensagem</label> <input type="text"
+						class="form-control" name="mensagem" id="mensagem" required
+						maxlength="100" placeholder="Mensagem">
+				</div>
+			</div>
+			<hr />
+			<div id="actions" class="row">
+				<div class="col-md-12">
+					<button type="submit" class="btn btn-primary" name="acao"
+						value="Criar">Enviar Email</button>
+					<a href="index.html" class="btn btn-default">Cancelar</a>
+				</div>
+			</div>
+	</form>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
